@@ -1,11 +1,50 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <section class="hero">
+    <h1>Hello, I'm Dhanamjaya Giddaluru</h1>
+    <p class="lead">Front End Architect at Virtusa Corporation • 19+ years building enterprise web applications</p>
+
+    <p>
+      I design and develop robust, accessible, and performant front‑end platforms using React, Angular, and TypeScript.
+      I lead UI teams end‑to‑end—from architecture and component design to reviews, testing, and production delivery—
+      with a focus on reliability, scale, and developer experience.
+    </p>
+
+    <ul class="highlights">
+      <li>Specializing in modern front‑end stacks: React, React Hooks, Redux, Angular, TypeScript, Node.js</li>
+      <li>Financial and enterprise domains: rate workflows, tracking, reporting, and dashboards</li>
+      <li>Accessibility, responsive design, and performance optimization as first‑class concerns</li>
+      <li>Agile delivery, code reviews, unit testing (Jest), and integration with REST/Java services</li>
+      <li>Mentoring engineers, establishing standards, and partnering with product and backend teams</li>
+      <li>Leadership: reporting manager responsibilities, resource planning, and team performance reviews</li>
+      <li>Client-facing: stakeholder management, scope definition, demos, and onboarding/training</li>
+      <li>Innovation: building GenAI POCs and integrating AI-assisted developer workflows</li>
+    </ul>
+
+    <div class="tags">
+      <span class="tag">React</span><span class="tag">Angular</span><span class="tag">TypeScript</span>
+      <span class="tag">Redux</span><span class="tag">Node.js</span><span class="tag">HTML5</span>
+      <span class="tag">CSS3</span><span class="tag">Accessibility</span><span class="tag">Jest</span><span class="tag">GenAI</span>
+    </div>
+
+    <div class="cta">
+      <a class="btn" href="/resume">View Resume</a>
+      <a class="btn" href="/projects">View Projects</a>
+      <a class="btn" href="https://www.linkedin.com/in/dhanamjayag/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </section>
 </Layout>
+
+<style>
+.hero { display: grid; gap: 14px; }
+.lead { color: var(--muted); margin-top: -6px; }
+.highlights { margin: 4px 0 0; padding-left: 18px; color: #c7d0db; line-height: 1.7; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.tag { background: #111827; border: 1px solid var(--border); color: var(--text); padding: 4px 8px; border-radius: 999px; font-size: 12px; }
+.cta { display: flex; gap: 10px; margin-top: 6px; }
+.btn { display: inline-flex; align-items: center; padding: 8px 12px; border: 1px solid var(--border); border-radius: 10px; color: var(--text); text-decoration: none; }
+.btn:hover { border-color: var(--accent-strong); color: var(--accent-strong); }
+</style>

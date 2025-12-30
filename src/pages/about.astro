@@ -1,0 +1,112 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <section class="about">
+    <header class="about__header">
+      <div>
+        <h1>About</h1>
+        <p>Front End Architect • 19+ years experience • React, Angular, TypeScript</p>
+      </div>
+    </header>
+
+    <div class="about__grid">
+      <aside class="about__sidebar">
+        <section class="card">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:dgiddalu@gmail.com">dgiddalu@gmail.com</a></li>
+            <li><a href="https://www.linkedin.com/in/dhanamjayag/" target="_blank" rel="noopener noreferrer">linkedin.com/in/dhanamjayag</a></li>
+            <li><a href="https://github.com/gdhanumjayuid" target="_blank" rel="noopener noreferrer">github.com/gdhanumjayuid</a></li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Skills</h2>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">Angular</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span>
+            <span class="tag">Redux</span><span class="tag">Node.js</span><span class="tag">HTML5</span><span class="tag">CSS3</span>
+            <span class="tag">SASS</span><span class="tag">Webpack</span><span class="tag">Accessibility</span><span class="tag">UX</span><span class="tag">GenAI</span>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Certifications</h2>
+          <ul>
+            <li>Microsoft Azure Administrator Associate</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Education</h2>
+          <p>Sri Venkateswara University, India</p>
+          <p>Master of Computer Applications (MCA), Class of 2006</p>
+        </section>
+      </aside>
+
+      <main class="about__main">
+        <section class="card">
+          <h2>Hi, I'm Dhanamjaya</h2>
+          <p>
+            I'm <strong>Dhanamjaya Giddaluru</strong>, a Front End Architect with <strong>19+ years</strong> of experience designing and building
+            performant web applications. I specialize in React and Angular, crafting robust financial and enterprise applications
+            with clean architecture, accessibility, and great developer experience.
+          </p>
+          <p>
+            I enjoy leading UI teams, shaping design systems, and partnering closely with product and backend teams to deliver
+            reliable, scalable solutions. My work emphasizes accessible UX, responsive layouts, and performance.
+          </p>
+        </section>
+
+        <section class="card">
+          <h2>What I Do</h2>
+          <ul>
+            <li>Lead UI teams to deliver high‑quality front‑end solutions aligned to business goals.</li>
+            <li>Define information architecture and integrate front‑end apps with REST APIs and services.</li>
+            <li>Establish coding standards, perform code reviews, and mentor engineers on best practices.</li>
+            <li>Collaborate with stakeholders to clarify requirements, scope, and user experience.</li>
+            <li>Handle reporting manager duties, resource planning, and team performance reviews.</li>
+            <li>Own client-facing activities: stakeholder management, demos, onboarding, and training.</li>
+            <li>Explore and prototype GenAI solutions and AI-assisted developer workflows.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Core Strengths</h2>
+          <ul>
+            <li>React, React Hooks, Redux, Angular/AngularJS, Node.js</li>
+            <li>TypeScript, JavaScript (ES6+), HTML5, CSS3, SASS/Less, Webpack</li>
+            <li>Accessibility, usability, responsive design, performance optimization</li>
+            <li>Testing with Jest/Jasmine/Karma; debugging with Chrome DevTools</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Tools I Use</h2>
+          <ul>
+            <li>GitHub, GitLab, Postman, VS Code, IntelliJ IDEA, Eclipse</li>
+            <li>Design/UX: Photoshop, Illustrator, Axure</li>
+            <li>Analytics/BI: Denodo, ThoughtSpot, Tableau, Power BI</li>
+            <li>Databases: Oracle, PL/SQL • OS: Windows, Mac</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </section>
+</Layout>
+
+<style>
+.about { display: grid; gap: 18px; }
+.about__header { border-bottom: 1px solid var(--border); padding-bottom: 12px; }
+.about__grid { display: grid; grid-template-columns: 320px 1fr; gap: 18px; }
+.about__sidebar { display: grid; gap: 14px; align-content: start; }
+.about__main { display: grid; gap: 14px; }
+.card { background: color-mix(in oklab, var(--panel) 85%, transparent); border: 1px solid var(--border); border-radius: 12px; padding: 16px; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { background: #111827; border: 1px solid var(--border); color: var(--text); padding: 4px 8px; border-radius: 999px; font-size: 12px; }
+
+@media (max-width: 960px) {
+  .about__grid { grid-template-columns: 1fr; }
+}
+</style>
